@@ -168,7 +168,16 @@
             color: #6b7280;
             border: 4px solid var(--white);
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border: 2px solid #1e3a8a;
+            overflow: hidden;                                                                                                                                                                           
         }
+
+        .gallery-item-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
 
         .skills-section {
             background-color: var(--white);
@@ -245,7 +254,7 @@
             justify-content: center;
             color: #9ca3af;
             font-size: 0.9rem;
-            border: 2px solid;
+            border: 2px solid #1e3a8a;
             overflow: hidden;                                                                                                                                                                           
         }
 
