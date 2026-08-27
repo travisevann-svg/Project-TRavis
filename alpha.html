@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Digital - TRavis Gaming</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="brand">TRavis Gaming</div>
+                <ul class="nav-links">
+                    <li><a onclick="navigate('beranda')" class="nav-link active" data-target="beranda">🏠 Home</a></li>
+                    <li><a onclick="navigate('tentang')" class="nav-link" data-target="tentang">👤 About Me</a></li>
+                    <li><a onclick="navigate('jaringan')" class="nav-link" data-target="jaringan">🌐 Computer Network</a></li>
+                    <li><a onclick="navigate('iot')" class="nav-link" data-target="iot">🤖 IoT & Arduino</a></li>
+                    <li><a onclick="navigate('karya')" class="nav-link" data-target="karya">💡 Galery</a></li>
+                    <li><a onclick="navigate('kontak')" class="nav-link" data-target="kontak">📬 Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 2. Halaman Utama (Beranda) -->
+        <section id="beranda" class="page-section active">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Halo, Saya Travis</h1>
+                    <p class="status">Siswa Kelas XII-6 - Peminatan Rekayasa Perangkat Lunak</p>
+                    <p style="margin-bottom: 2rem;">Selamat datang di portofolio digital saya. Ini adalah ruang tempat saya mendokumentasikan perjalanan belajar, karya, dan eksplorasi saya di dunia teknologi dan informatika.</p>
+                    <button class="btn" onclick="navigate('karya')">Lihat Proyek Saya</button>
+                    <button class="btn" style="background-color: var(--white); color: var(--primary-color); border: 2px solid var(--primary-color); margin-left: 10px;" onclick="navigate('kontak')">Hubungi Saya</button>
+                </div>
+                <!-- Placeholder untuk assets/img/profil.jpg -->
+                <div class="hero-img-placeholder">
+                   <img src="Assets/img/images.jpg">
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <h2>Ringkasan Keahlian</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">🌐 HTML5 & CSS3</div>
+                    <div class="skill-card">🔌 Jaringan Dasar</div>
+                    <div class="skill-card">💡 Problem Solving</div>
+                    <div class="skill-card">💻 Pemrograman Dasar</div>
+                    <div class="skill-card">🛠️ Troubleshooting IT</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Halaman "Tentang Saya" -->
+        <section id="tentang" class="page-section">
+            <div class="about-grid">
+                <div class="card">
+                    <h2>Biodata Lengkap</h2>
+                    <table class="biodata-table">
+                        <tr>
+                            <td>Nama Lengkap</td>
+                            <td>Travis Evan Ardianta Setiawan</td>
+                        </tr>
+                        <tr>
+                            <td>Tempat, Tanggal Lahir</td>
+                            <td>Mojokerto, 24 November 2008</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas / Peminatan</td>
+                            <td>XII / Rekayasa Perangkat Lunak</td>
+                        </tr>
+                        <tr>
+                            <td>Riwayat Pendidikan</td>
+                            <td>SMA Negeri 2 Mojokerto (2024 - Sekarang)</td>
+                        </tr>
+                        <tr>
+                            <td>Minat Studi Masa Depan</td>
+                            <td>Ilmu Komputer / Geofisika</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="card">
+                    <h2>Galeri Aktivitas Belajar</h2>
+                    <p>Dokumentasi kegiatan saat praktikum di laboratorium sekolah.</p>
+                    <div class="gallery-grid">
+                        <div class="gallery-item-placeholder">[img1.jpg]</div>
+                        <div class="gallery-item-placeholder">[img2.jpg]</div>
+                        <div class="gallery-item-placeholder">[img3.jpg]</div>
+                        <div class="gallery-item-placeholder">[img4.jpg]</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4a. Modul Jaringan Komputer -->
+        <section id="jaringan" class="page-section">
+            <h2>Modul Jaringan Komputer</h2>
+            <p style="margin-bottom: 2rem;">Dokumentasi tugas dan praktikum terkait infrastruktur jaringan.</p>
+            
+            <div class="module-grid">
+                <div class="module-card">
+                    <div class="module-img-placeholder">[Topologi_Cisco.jpg]</div>
+                    <div class="module-content">
+                        <h3>Simulasi Topologi Bintang</h3>
+                        <p>Simulasi jaringan menggunakan Cisco Packet Tracer dengan implementasi DHCP server dan routing statis.</p>
+                        <a href="#" class="btn" style="text-align: center;">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-img-placeholder">[Config_IP.jpg]</div>
+                    <div class="module-content">
+                        <h3>Konfigurasi IP Address & Subnetting</h3>
+                        <p>Dokumentasi perhitungan subnet mask dan implementasi IP Statis pada jaringan lokal laboratorium.</p>
+                        <a href="#" class="btn" style="text-align: center;">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4b. Modul IoT & Arduino -->
+        <section id="iot" class="page-section">
+            <h2>Modul Internet of Things / Arduino</h2>
+            <p style="margin-bottom: 2rem;">Eksplorasi perangkat keras, sensor, dan pemrograman mikrokontroler.</p>
+
+            <div class="module-grid">
+                <div class="module-card">
+                    <div class="module-img-placeholder">[Skema_Wokwi.jpg]</div>
+                    <div class="module-content">
+                        <h3>Skematik Sensor Suhu DHT11</h3>
+                        <p>Desain sirkuit menggunakan Wokwi untuk membaca suhu dan kelembaban, ditampilkan pada layar LCD 16x2.</p>
+                        <a href="#" class="btn" style="text-align: center;">Lihat Kode (C++)</a>
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-img-placeholder">[Rakitan_Servo.jpg]</div>
+                    <div class="module-content">
+                        <h3>Smart Trash Bin (Servo)</h3>
+                        <p>Dokumentasi proyek perakitan tempat sampah otomatis menggunakan sensor ultrasonik dan motor servo.</p>
+                        <a href="#" class="btn" style="text-align: center;">Lihat Proyek</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4c. Modul Galeri Proyek -->
+        <section id="karya" class="page-section">
+            <h2>Galeri Karya & Proyek</h2>
+            <p style="margin-bottom: 2rem;">Kumpulan hasil karya pemrograman dan kolaborasi selama masa pembelajaran.</p>
+
+            <div class="module-grid">
+                <div class="module-card">
+                    <div class="module-img-placeholder">[Screenshot_Web1.jpg]</div>
+                    <div class="module-content">
+                        <h3>Website Profil Sekolah</h3>
+                        <p>Proyek kolaborasi membuat landing page sederhana menggunakan HTML5 dan CSS Grid murni.</p>
+                        <a href="#" class="btn" style="text-align: center;">Demo / GitHub Repo</a>
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-img-placeholder">[Screenshot_App.jpg]</div>
+                    <div class="module-content">
+                        <h3>Aplikasi Kasir Sederhana</h3>
+                        <p>Tugas pemrograman dasar membuat logika perhitungan transaksi toko menggunakan Python.</p>
+                        <a href="#" class="btn" style="text-align: center;">Demo / GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Halaman Formulir Kontak -->
+        <section id="kontak" class="page-section">
+            <div class="card contact-container">
+                <h2 style="text-align: center;">Hubungi Saya</h2>
+                <p style="text-align: center; margin-bottom: 2rem;">Silakan tinggalkan pesan melalui formulir di bawah ini.</p>
+                
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Pesan berhasil disimulasikan terkirim!');">
+                    <div class="form-group">
+                        <label for="nama">Nama Pengirim</label>
+                        <input type="text" id="nama" class="form-control" required placeholder="Masukkan nama Anda">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Alamat Email</label>
+                        <input type="email" id="email" class="form-control" required placeholder="nama@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="kategori">Kategori Pesan</label>
+                        <select id="kategori" class="form-control" required>
+                            <option value="">-- Pilih Kategori --</option>
+                            <option value="pertanyaan">Pertanyaan</option>
+                            <option value="kolaborasi">Kolaborasi Proyek</option>
+                            <option value="saran">Saran / Masukan</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pesan">Pesan Teks</label>
+                        <textarea id="pesan" class="form-control" required placeholder="Tulis pesan Anda di sini..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Kirim Pesan</button>
+                </form>
+
+                <div style="margin-top: 2rem; text-align: center; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+                    <h3>Info Kontak Lainnya</h3>
+                    <p>📧 Email Sekolah: dwi.siswa@smk-contoh.sch.id</p>
+                    <p>📍 Lokasi: Jakarta, Indonesia</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Portofolio Digital - Travis.Dev (Tugas Informatika Kelas XII).</p>
+            <div class="social-links">
+                <a href="#">GitHub</a> | 
+                <a href="#">LinkedIn</a> | 
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for SPA Navigation
+        function navigate(pageId) {
+            // 1. Hide all sections
+            const sections = document.querySelectorAll('.page-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // 2. Remove active class from all nav links
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // 3. Show the target section
+            const targetSection = document.getElementById(pageId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+
+            // 4. Highlight the corresponding nav link
+            const activeLink = document.querySelector(`.nav-link[data-target="${pageId}"]`);
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
